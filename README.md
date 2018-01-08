@@ -1,4 +1,4 @@
-# Group Project: UIX Company Site
+# Group Project UIX: Company Site
 
 As a team, build the web site for a fictitious product company. The team gets to decide what the name of the company is, and what types of products it manufactures. Be creative and have fun.
 
@@ -11,10 +11,6 @@ mkdir -p ~/workspace/group-projects && cd $_
 ```
 
 ## Requirements
-
-### Deliverables
-
-* Semantic HTML
 
 ### Theme
 
@@ -58,7 +54,7 @@ Once the master is updaed on Github, you may need to update your local branch.  
 1. Checkout your branch
 1. Within your branch, merge origin master
 
-### Product page
+### Products page
 
 The team's product page will be driven from JavaScript code. Decide on at least, 8 products that your business manufactures. The product page must have a linked JavaScript file.
 
@@ -67,6 +63,10 @@ The team's product page will be driven from JavaScript code. Decide on at least,
 1. The team will use JavaScript to add each product to the DOM.
 1. Each product must be a card. As a team, decide on the style of the card.
 1. The layout of the product page should be a grid of cards. 3-wide, 4-wide, 5-wide, the teams must decide how many cards are on each row.
+
+### Semantic HTML
+1. Each page should have one meaningful and important headline (h1)
+1. 
 
 ## Plan and Design First
 1. Define problem statement           
@@ -84,8 +84,8 @@ The team's product page will be driven from JavaScript code. Decide on at least,
 Split your JavaScript into two files.
 
 Create a Factory
-* The factory deals with data. The factory should read from local storage and see if the database is there. If it is, use that object, otherwise, build it and store it.
+* The factory deals with data (data definition or creation).
 
 Use a Controller
-* The job of the controller is to use the data to query and manipulate the DOM.
+* The job of the controller is to query and manipulate the DOM.
 
