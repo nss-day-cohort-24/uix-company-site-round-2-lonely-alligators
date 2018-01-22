@@ -1,0 +1,356 @@
+ 
+/* Defaults */
+
+body {
+    max-width: 1920px;
+    background: #333132;  
+    font-family: "Sansita", sans-serif;
+    color: #E5F5F9;
+    font-size: 16px;
+    margin: 0;
+}
+/* LP added this to all divs so that the top and bottom would have space
+*  You can override this by using child css selectors.
+*/
+
+.clearfix {
+    clear: both;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Asar", serif;
+    color: rgb(229,245,249);
+}
+
+h1 {
+    font-size: 3em; 
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 600px;
+    max-height: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+header {
+    padding: 10px 20px;
+    height: 50px;
+    color: #333132;
+    background-color: #ABEBFF;
+}
+
+#logo {
+    max-height: 100%;
+}
+
+/* Navigation */
+
+nav {
+    float: right;
+    padding: 16px 0px 16px 16px;
+    text-align: center;
+}
+
+nav ul {
+    height: 100%;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 .25em;
+    padding: 0;
+    display: inline-block;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+}
+
+nav ul li:last-child {
+    margin-right: .5em;
+}
+
+nav ul li:first-child {
+    margin-left: .5em;
+}
+
+nav li a {
+    text-decoration: none;
+    background: linear-gradient(90deg,,);
+    color: rgb(229,245,249);
+    padding: 15px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition: all .5s ease-out;
+}
+
+nav li a:hover {
+    background-color: rgb(253,36,92);
+    transition: all .2s ease-in;
+}
+
+a:hover {
+    box-shadow: 0 2.5px 5px 0 rgba(32,32,32,.65);
+}
+
+/* Body */
+
+div.container {
+    padding: 10px 0;
+    /* CSS Debugging Techinque === MAKE BORDERS AROUND EVERYTHING */
+    border: solid yellow 2px;
+}
+
+/* Landing Page */
+
+.sectionDiv {
+    padding-top: 0;
+}
+
+.thrubyHeader {
+    padding: 10px 20px;
+    height: 50px;
+    background-image: url("../images/hero.png");
+    background-position-y: -630px;
+    background-position-x: center;
+    box-shadow: 0 5px 5px 0 rgba(32,32,32,.65), inset 0 0 0 2000px rgba(1, 217, 255, 0.45);
+    z-index: 100;
+}
+
+.landing section {
+    height: max-content;
+    display: block;
+    padding: 10px 80px;
+    font-weight: bold;
+
+}
+
+section#hero h1 {
+    color: #ABEBFF;
+}
+
+section#hero h2 {
+    color: #ABEBFF;
+}
+
+section#hero p {
+    color: #ABEBFF;
+}
+
+section#hero {
+    background-image: url("../images/hero.png");
+    padding-top: 200px ;
+    padding-bottom: 100px ;
+    background-position-y: -700px;
+    background-position-x: center;
+    position: relative;
+    box-shadow:  0 5px 5px 0 rgba(32,32,32,.65);
+}
+
+#hero .hand {
+    position: absolute;
+    bottom: 0;
+}
+
+.download1 {
+    background-color: rgba(1, 217, 255, 0.45);
+    border: none;
+    color: rgb(229,245,249);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 2.5em 0;
+    font-weight: bold;
+    transition: all .5s ease-out;
+}
+
+.download1:hover {
+    background-color: rgb(68,226,240);
+    color: rgb(229,245,249);
+    box-shadow: 0 5px 5px 0 rgba(32,32,32,.65);
+    transition: all .2s ease-in;
+    transform: scale(1.1);
+}
+
+.download {
+    background-color:rgba(190,30,45,.75);
+    border: none;
+    color: rgb(229,245,249);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 2.5em 0;
+    font-weight: bold;
+    transition: all .5s ease-out;
+}
+
+.download:hover {
+    background-color: rgb(253,36,92);
+    color: #ABEBFF;
+    box-shadow: 0 5px 5px 0 rgba(32,32,32,.65);
+    transition: all .2s ease-in;
+    transform: scale(1.1);
+}
+
+section#functions {
+    box-shadow:  0 5px 5px 0 rgba(32,32,32,.65);
+}
+
+section#reviews {
+    background-color:#ABEBFF;
+    color: #333132;
+    box-shadow:  0 5px 5px 0 rgba(32,32,32,.65);
+}
+
+section#reviews h1, section#reviews h2 {
+    color: #333132;
+}
+
+.stars {
+    float: right;
+    margin: 5em 10em;
+}
+
+.stars h1 {
+    padding: 1em 0;
+    margin: 0;
+}
+
+.landing article {
+    display: inline-block;
+    width: 45%;
+}
+
+.landing h1, h2 {
+    color: rgb(229,245,249)
+}
+
+.hand {
+    float: right;
+    display: inline-block;
+    padding-right: 50px;
+}
+
+.bottomNavDiv {
+    background-image: url("../images/hero.png");
+    background-position-y: 200px;
+    background-position-x: center;
+}
+
+.bottomNav {
+    float: none;
+    font-weight: bold;
+    margin-left: auto;
+    padding: 32px;
+    transition: all .5s ease-out;
+}
+
+.bottomNav a:hover {
+    box-shadow: 0 5px 5px 0 rgba(32,32,32,.65);
+    transition: all .2s ease-in;
+}
+
+/* Footer */
+
+footer {
+    display: block;
+    height: 25px;
+    padding: 10px 20px;
+    color: #333132;
+    background-color: rgba(229,245,249,.75);
+}
+
+#copyright { 
+    max-height: 100%;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+}
+
+footer ul {
+    float: right;
+    z-index: 10;
+    position: absolute;
+    bottom: 5px;
+    right: 1%;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+}
+
+footer li a {
+    display: block;
+}
+
+footer li a img {
+    display: block;
+    max-width: 50px;
+}
+
+footer li a img:hover {
+    color: rgba(229, 245, 249, .45);
+}
+
+.thrubyFooter {
+    background-image: url(../images/hero.png);
+    background-position-x: center;
+    background-position-y: bottom;
+    color: rgb(229,245,249);
+    text-align: center;
+    display: block;
+    height: 50px;
+    box-shadow:inset 0 0 0 2000px rgba(1, 217, 255, 0.45);
+    position: relative;
+}
+
+#thrubyCopy { 
+    max-height: 100%;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.socialIcons a {
+    border-radius: 50%;
+}
+    

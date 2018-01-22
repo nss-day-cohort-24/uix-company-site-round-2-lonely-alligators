@@ -1,0 +1,103 @@
+/** Home- Header **/
+
+.homeHeader {
+    padding: 10px 20px;
+    height: 50px;
+    background-image: url("../images/hero2.png");
+    background-position-y: -630px;
+    background-position-x: center;
+    box-shadow: 0 5px 5px 0 rgba(32,32,32,.65), inset 0 0 0 2000px rgba(1, 217, 255, 0.45);
+    z-index: 100;
+}
+
+/** Home - Hero **/
+
+
+section#hero {
+    background-image: url("../images/hero2.png");
+    padding-top: 200px ;
+    padding-bottom: 100px ;
+    background-position-y: -700px;
+    background-position-x: center;
+    position: relative;
+    box-shadow:  0 5px 5px 0 rgba(32,32,32,.65);
+}
+
+/** Home - Featured Apps **/
+
+.landing h2 {
+    text-align: center;
+}
+
+div.featured {
+    display: inline-block;
+    background: aliceblue;
+    color: #333132;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 25%;
+    height: 360px;
+    vertical-align: text-bottom;
+}
+
+div.featured h3 {
+    color: #333132;
+    font-family: 'Arvo', serif;
+}
+
+.apps {
+    text-align: center;
+}
+
+div.featured img {
+    max-width: 200px;
+}
+
+div.featured img {
+    transition: all .5s ease-out;
+}
+
+div.featured img:hover {
+    transition: all .2s ease-in;
+    transform: scale(1.4);
+    
+}
+
+.featuredButtons {
+    text-align: center;
+}
+
+.featuredButtons .download1 {
+    margin: 0 100px;
+}
+
+#featuredApps {
+    margin-bottom: 2em;
+}
+
+/** Home - Contact Section **/
+
+section#contact {
+    background-color:#ABEBFF;
+    color: #333132;
+    box-shadow:  0 5px 5px 0 rgba(32,32,32,.65);
+}
+
+section#contact h1, section#contact h2 {
+    color: #333132;
+}
+
+section#contact p {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#thrubyCopy { 
+    max-height: 100%;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 0;
+}
