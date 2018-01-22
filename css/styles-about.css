@@ -1,0 +1,95 @@
+.aboutHeader {
+    padding: 10px 20px;
+    height: 50px;
+    background-image: url("../images/hero2.png");
+    background-position-y: 0px;
+    box-shadow: 0 5px 5px 0 rgba(32,32,32,.65), inset 0 0 0 2000px rgba(1, 217, 255, 0.45);
+    z-index: 100;
+}
+
+.contactHeader {
+    padding: 10px 20px;
+    height: 50px;
+    background-image: url("../images/hero2.png");
+    background-position-y: 0px;
+    background-position-x: right;
+    box-shadow: 0 5px 5px 0 rgba(32,32,32,.65), inset 0 0 0 2000px rgba(255, 1, 77, 0.45);
+    z-index: 100;
+}
+
+section.contact {
+    background-image: url("/images/hero2.png");
+    background-position-y: -60px;
+       background-position-x: right;
+    position: relative;
+    box-shadow:  0 5px 5px 0 rgba(32,32,32,.65);
+}
+
+section#company {
+    background-image: url("/images/hero2.png");
+    background-position-y: -60px;
+    position: relative;
+    box-shadow:  0 5px 5px 0 rgba(32,32,32,.65);
+}
+
+section#company div#desc {
+    padding: 20px;
+    background-color: rgba(171,235,255,0.4);
+    border-radius: 10px;
+    margin-bottom: 100px;
+    width: 80%;
+    box-shadow:  0 5px 5px 0 rgba(32,32,32,.65);
+}
+
+section#company div#contactDiv {
+    padding: 20px;
+    background-color: rgba(255, 0, 85, 0.4);
+    border-radius: 10px;
+    margin-bottom: 100px;
+    width: 80%;
+    box-shadow:  0 5px 5px 0 rgba(32,32,32,.65);
+}
+
+section#company img {
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 250px;
+}
+
+section.team {
+    background-color: #ABEBFF ;
+    color: #333132;
+}
+
+section.team h1, 
+section.team h2, 
+section.team h3 {
+    color: #333132;
+}
+
+section.team h3 {
+    margin: 0 0 25px;
+}
+
+section.team img {
+    max-height: 150px;
+    margin-right: 25px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 50px;
+}
+
+section.team:last-child {
+    padding-bottom: 100px;
+}
+
+.contactFooter {
+    background-image: url(../images/hero2.png);
+    background-position-x: right;
+    background-position-y: bottom;
+    color: rgb(229,245,249);
+    text-align: center;
+    display: block;
+    height: 50px;
+    box-shadow:inset 0 0 0 2000px rgba(255, 1, 77, 0.45);
+    position: relative;

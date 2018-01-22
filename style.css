@@ -1,0 +1,133 @@
+
+/*-------------Basic------------------
+==================================== 
+  --------BODY and main-BODY----------
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+}
+div {
+    padding: 
+}
+
+.clearfix {
+    clear: both;
+    width: 100%;
+}
+
+h1,h2,
+h3,h4,
+h5,h6 {
+    font-family: "Asar", serif;
+    color: #BE1E2D;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+p {
+    margin: ;
+    padding: ;
+}
+
+ul {
+    margin: ;
+    padding: ;
+}
+ ul > li{
+
+ }
+img {
+    max-width: ;
+    max-height:;
+    margin: ;
+    padding: ;
+}
+ /* ---- Float clearfix ---- */
+
+ .clearfix::after {
+     content: ;
+     display: ;
+     clear: ;
+ }
+
+/*=============================
+     ---- Navigation ---- 
+=============================*/
+nav{
+
+}
+}
+
+ nav > ul {
+
+}
+ /*targeting to the specific navigation tag*/
+
+nav > ul > li {
+
+}
+nav > li >a{
+
+}
+nav a:hover{
+
+}
+
+/*=============================
+        ---- HEADER ----
+/*============================*/
+.main-header{
+
+}
+/*if it is  necessary*/
+#logo {
+
+}
+
+/*=============================
+        ---- FOOTER----
+/*============================*/
+
+footer{
+
+}
+ul{
+
+}
+
+ul > li {
+
+}
+ ul > a{
+
+ }
+footer > li > a > img {
+   
+}
+
+footer > li > a > img:hover {
+   
+}
