@@ -105,7 +105,7 @@ nav ul li:first-child {
 
 nav li a {
     text-decoration: none;
-    background: linear-gradient(90deg,,);
+    background: linear-gradient(90deg);
     color: rgb(229,245,249);
     padding: 15px 15px;
     border-radius: 5px;
@@ -340,6 +340,7 @@ footer li a img:hover {
     height: 50px;
     box-shadow:inset 0 0 0 2000px rgba(1, 217, 255, 0.45);
     position: relative;
+    margin:0;
 }
 
 #thrubyCopy { 

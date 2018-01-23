@@ -48,6 +48,7 @@ var products = [
         price: 'free (in-app purchases)',
         imgURL: '../images/appIcons/workout.png'
     }
+        
 ];
 
 for (i=0; i<=7; i++) {
