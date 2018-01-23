@@ -1,0 +1,44 @@
+/* * {
+    border: 1px solid red;
+} */
+
+
+nav.thrubyNav {
+    background-color: #10B9D2;
+    font-family: "Source Sans Pro", sans-serif;}
+
+nav.thrubyNav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+nav.thrubyNav li {
+    padding: 1em 3em;
+    list-style-type: none;
+}
+
+nav.thrubyNav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li a {
+    text-decoration: none;
+    background: linear-gradient(90deg,,);
+    color: rgb(229,245,249);
+    padding: 8px 17px;
+    border-radius: 8px;
+    text-align: center;
+    transition: all .5s ease-out;
+}
+
+nav li a:hover {
+    background-color: #bbc946;
+    transition: all .2s ease-in;
+}
+
+a:hover {
+    box-shadow: 0 2.5px 5px 0 rgba(32,32,32,.65);
+}
