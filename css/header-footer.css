@@ -1,6 +1,4 @@
-/* * {
-    border: 1px solid red;
-} */
+/* Header */
 
 nav.thrubyNav #logo {
     height: 50px;
@@ -50,6 +48,14 @@ a:hover {
     box-shadow: 0 2.5px 5px 0 rgba(32,32,32,.65);
 }
 
+/* Header */
+
+
+
+
+
+/* Footer */
+
 .thrubyFooter {
     background-color: #d9dede;
 }
@@ -58,6 +64,67 @@ a:hover {
     color: #726f6c;
     text-align: center;
     padding: .5em 0;
+}
+
+
+/* Footer */
+
+
+
+
+/* Homepage */
+
+#button {
+    background-color: #bbc946;
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: lighter;
+    float: left;
+    position: absolute;
+    left: 350px;
+    margin-top: 325px;
+    padding: 1em 3em;
+    border-radius: 3em;
+
+}
+
+#introducing {
+    font-family: 'Merriweather', sans-serif;
+    font-style: italic;
+    margin-top: 225px;
+    font-size: 1.5em;
+    color: #8d8984;
+    font-weight: lighter;
+    line-height: 1.5em;
+    float: left;
+    position: absolute;
+    left: 350px;
+
+
+
+}
+
+#two{
+    font-family: "Source Sans Pro", sans-serif;
+    color: #8d8984;
+    font-weight: lighter;
+    padding-top: 100px;
+    padding-left: 350px;
+    float: left;
+    font-size: 3.5em;
+}
+
+#phone {
+    float: right;
+    width: 20%;
+    margin-bottom: -275px;
+    padding-right: 250px;
+    margin-top: 50px;
+}
+
+#background {
+    margin-top: -275px;
+    width: 100%;
 }
 
 /* Product Detail */
