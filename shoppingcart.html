@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Asar|Sansita" rel="styles.css">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="/css/styles-home.css" />
-    <script src="products.js"></script>
+    <script src="js/products.js"></script>
 </head>
     <body class="landing">
         <header class="homeHeader">
@@ -20,6 +20,7 @@
                     <li><a href="../products.html">Products</a></li>
                     <li><a href="../about.html">About</a></li>
                     <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../shoppingcart.html">Shopping Cart</a></li>
                 </ul>
             </nav>
         </header> 
@@ -30,7 +31,7 @@
             
             
     <fieldset class="info">
-        <h1>Billing and Sipping Information</h1>
+        <h1>Billing and Shipping Information</h1>
             <label>First name:<input class="input-adjust" type="text" id="firstname1"></label>
             <label>Last name:<input class="input-adjust" type="text" id="lastname1"></label>
             <label>Address:<input class="input-adjust" type="text" id="address1"></label>
@@ -44,13 +45,40 @@
    
    <script>
       var cart = [] ;
-      var Item = function(name, price, discrp) {
+      var Item = function(name, price, count) {
           this.name = name
           this.price = price
-          this.discrp = discrip
+          this.count = count
       }; 
  
-    
+    function addItemToCart(name, price, count) {
+          for (var i in cart) {
+              if (cart[i].name === name) {
+                  cart[i].count += count;
+                  return;
+              }
+          }
+        var item = new Item(name, price, count);
+        cart.push(item);
+    }
+   addItemToCart("Apple", 1.22, 1);
+   addItemToCart("Apple", 1.22, 1);
+   console.log(cart);
+
+    function removeItemFromCart(name) {// removes one single item
+         for (var i in cart) {
+             if (cart[i].name === name) {
+                 
+             }
+         }
+    }
+    // removeItemFromCartAll(name) // removes all of single item by name
+    // clearCart()
+    // countCart() -> return total count
+    // totalCart() -> return total cost
+    // listCart() -> array of Item
+    // saveCart()
+    // loadCart()
     
     </script>
 
