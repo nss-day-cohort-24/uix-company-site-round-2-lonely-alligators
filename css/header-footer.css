@@ -2,6 +2,13 @@
     border: 1px solid red;
 } */
 
+nav.thrubyNav #logo {
+    height: 5.4%;
+    width: 5.4%;
+    float: left;
+    padding-top: .5em;
+    
+}
 
 nav.thrubyNav {
     background-color: #10B9D2;
@@ -15,7 +22,7 @@ nav.thrubyNav ul {
 }
 
 nav.thrubyNav li {
-    padding: 1em 3em;
+    padding: 1.25em 3em;
     list-style-type: none;
 }
 
@@ -41,4 +48,14 @@ nav li a:hover {
 
 a:hover {
     box-shadow: 0 2.5px 5px 0 rgba(32,32,32,.65);
+}
+
+.thrubyFooter {
+    background-color: #d9dede;
+}
+
+#copy {
+    color: #726f6c;
+    text-align: center;
+    padding: .5em 0;
 }
