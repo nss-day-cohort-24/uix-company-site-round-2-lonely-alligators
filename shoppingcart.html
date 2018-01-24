@@ -1,32 +1,37 @@
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>FABL: Welcome | thRuby</title>
+    <title>OpenIDEO: Welcome | thRuby</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Asar|Sansita" rel="styles.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/styles-home.css" />
-    <script src="js/products.js"></script>
-     <script src="http://code.jquery.com/jquery-1.9.0rc1.js"></script> <!-- jquery -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/header-footer.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+    <script src="main.js"></script>
 </head>
     <body class="landing">
+       
+       
+       
+       
+       
+       <!--  HEADER/NAV BAR-->
         <header class="homeHeader">
-            <img id="logo" src="images/logos/logo-FABL-horz_07.png">
+            <!-- <img id="logo" src="images/logos/logo-FABL-horz_07.png"> -->
             <nav class="thrubyNav">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../thruby.html">thRUBY</a></li>
-                    <li><a href="../products.html">Products</a></li>
-                    <li><a href="../about.html">About</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
-                    <li><a href="../shoppingcart.html">Shopping Cart</a></li>
+                <img id="logo" src="/images/rebrand-images/O.svg">
+                <ul class="contact-page-nav">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../thruby.html">LEARN</a></li>
+                    <li><a href="../products.html">ADD-ONS</a></li>
+                    <li><a href="../about.html">ABOUT</a></li>
+                    <li><a href="../contact.html">CONTACT</a></li>
+                    <li><a href="../shoppingcart.html">CART</a></li>
                 </ul>
             </nav>
-        </header> 
+        </header>
         <section class="billing" id="ship-bill">
-            <h1>Your Shopping Cart</h1>
+            <h1 id="shopping">Your Shopping Cart</h1>
             
             <form>
             
@@ -40,7 +45,7 @@
             <label>Country:<input class="input-adjust" type="text" id="country1"></label>
         </fieldset>
         
-        <input class="input-adjust" type="submit" value="Submit"></form>
+        <input id="submitbutton" class="input-adjust" type="submit" value="Submit"></form>
    
    <div>
        <ul>
@@ -134,3 +139,16 @@
     // loadCart()
     
     </script>
+
+<footer class="thrubyFooter">
+    <div id="copy">
+        <p>&copy; OpenIDEO 2018</p>
+    </div>
+        <!-- <ul class="socialIcons">
+            <li><a href="#"><img src="images/socialicons/fb.png"></a></li>
+            <li><a href="#"><img src="images/socialicons/tw.png"></a></li>
+        </ul> -->
+    </footer>
+    </main>
+</body>
+</html>
