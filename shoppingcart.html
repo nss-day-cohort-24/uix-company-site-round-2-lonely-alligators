@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/css/header-footer.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
     <script src="main.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.9.0rc1.js"></script> <!-- jquery -->
 </head>
     <body class="landing">
        
@@ -33,11 +35,29 @@
         <section class="billing" id="ship-bill">
             <h1 id="shopping">Your Shopping Cart</h1>
             
+            <div>
+                <ul>
+                    <li><a class="add-to-cart" href="#" data-name="thRuby" data-price="4.00">thRuby $4.00</a></li>
+                    <li><a class="add-to-cart" href="#" data-name="KeepUp" data-price="0.99">KeepUp $0.99</a></li>
+                    <li><a class="add-to-cart" href="#" data-name="Carriage" data-price="0.99">Carriage $0.99</a></li>
+                    <li><a class="add-to-cart" href="#" data-name="Lyingth" data-price="9.99">Lyingth $9.99</a></li>
+                    <li><a class="add-to-cart" href="#" data-name="AllGownedUp" data-price="0.99">All Gowned Up $0.99</a></li>
+                    <li><a class="add-to-cart" href="#" data-name="CandyCottageCookbook" data-price="6.00">Candy Cottage Cookbook $6.00</a></li>
+                    <li><a class="add-to-cart" href="#" data-name="StronkFitness" data-price="0.99">Stronk Fitness $0.99</a></li>
+                </ul>
+                <button id="clear-cart">Clear Cart</button>
+            </div>
+             <div>
+               <h2 id="your" >Your Cart</h2>
+                 <ul id="show-cart">
+                </ul>
+             </div> 
+
             <form>
             
             
     <fieldset class="info">
-        <h1>Billing and Shipping Information</h1>
+        <h1 id="billingtext">Billing and Shipping Information</h1>
             <label>First name:<input class="input-adjust" type="text" id="firstname1"></label>
             <label>Last name:<input class="input-adjust" type="text" id="lastname1"></label>
             <label>Address:<input class="input-adjust" type="text" id="address1"></label>
@@ -47,23 +67,7 @@
         
         <input id="submitbutton" class="input-adjust" type="submit" value="Submit"></form>
    
-   <div>
-       <ul>
-           <li><a class="add-to-cart" href="#" data-name="thRuby" data-price="4.00">thRuby $4.00</a></li>
-           <li><a class="add-to-cart" href="#" data-name="KeepUp" data-price="0.99">KeepUp $0.99</a></li>
-           <li><a class="add-to-cart" href="#" data-name="Carriage" data-price="0.99">Carriage $0.99</a></li>
-           <li><a class="add-to-cart" href="#" data-name="Lyingth" data-price="9.99">Lyingth $9.99</a></li>
-           <li><a class="add-to-cart" href="#" data-name="AllGownedUp" data-price="0.99">All Gowned Up $0.99</a></li>
-           <li><a class="add-to-cart" href="#" data-name="CandyCottageCookbook" data-price="6.00">Candy Cottage Cookbook $6.00</a></li>
-           <li><a class="add-to-cart" href="#" data-name="StronkFitness" data-price="0.99">Stronk Fitness $0.99</a></li>
-       </ul>
-       <button id="clear-cart">Clear Cart</button>
-   </div>
-    <div>
-      <h2>Your Cart</h2>
-        <ul id="show-cart">
-       </ul>
-    </div>
+  
    
    <script>
     
@@ -152,3 +156,5 @@
     </main>
 </body>
 </html>
+
+

@@ -432,6 +432,9 @@ section.team:last-child {
     font-weight: lighter;
     border-radius: 3em;
     padding: .5em 1.5em .5em 1.5em;
+    margin-left: 28.5em;
+    margin-top: 2em;
+    margin-bottom: 5em;
 }
 
 #clear-cart {
@@ -441,4 +444,54 @@ section.team:last-child {
     font-weight: lighter;
     border-radius: 3em;
     padding: .5em 1.5em .5em 1.5em;
+    margin-left: 28em;
+}
+
+#billingtext {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #10B9D2;
+    line-height: 1.5em;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 2em;
+    margin: .5em 0 1em 0;
+}
+
+.info {
+    width: 50%;
+    margin: auto;
+    display: flex;
+}
+
+.input-adjust {
+    margin: 1em;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    align-content: center;
+
+}
+
+li a {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #8d8984;
+    font-size: 2em;
+    padding: 8em;
+    line-height: 2em;
+    text-decoration: none;
+
+
+
+}
+
+#your {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #10B9D2;
+    line-height: 1.5em;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 2em;
+    margin: .5em 0 1em 0;
 }
