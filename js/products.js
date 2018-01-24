@@ -51,44 +51,24 @@ var products = [
         
 ];
 
+for (i=0; i<=7; i++) {
+    console.log(products[i]);
 
-var productHtml = "";
-for (i = 0; i < products.length; i++) {
-    productHtml += `<article class="card">`;
-    productHtml += `<img src="` + products[i].imgUrl + `">`;
-    productHtml += `<h2>` + products[i].name + `</h2>`;
-    productHtml += `<p class="price">` + products[i].price + `</p>`;
-    productHtml += `<p class="appDesc">` + products[i].description + `</p>`;
-    productHtml += `</article>`;
+    var cardContent = `<article class="card">
+                    <img src="` + products[i].imgURL + `">
+                    <h2>` + products[i].name + `</h2>
+                    <p class="price">` + products[i].price + `</p>
+                    <p class="appDesc">` + products[i].description + `</p>
+                    </article>`;
 
+    function addCard() {
+        var card = document.getElementById('cards');
+        card.innerHTML += cardContent;
+    }
+
+    addCard(products[i]);
 
 }
 
-document.getElementById("cards").innerHTML = productHtml;
-console.log(productHtml);
-
-
-
-// for (i=0; i<=7; i++) {
-//     console.log(products[i]);
-
-//     var cardContent = `<article class="card">
-//                     <img src="` + products[i].imgURL + `">
-//                     <h2>` + products[i].name + `</h2>
-//                     <p class="price">` + products[i].price + `</p>
-//                     <p class="appDesc">` + products[i].description + `</p>
-//                     </article>`;
-
-    
-
-//     addCard(products[i]);
-
-// }
-// function addCard() {
-//     // var card = document.getElementById('cards');
-//     // var myCard = document.getElementById('cards');
-//     document.getElementById('cards').innerHTML += cardContent;
-// }
-
-// console.log('It\'s all workin');
+console.log('It\'s all workin');
 
