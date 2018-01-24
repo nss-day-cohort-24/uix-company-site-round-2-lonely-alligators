@@ -280,3 +280,135 @@ font-weight: 100;
     border-radius: 3em;
     margin-left: 34.3em;
 }
+
+/* Add-Ons */
+
+#add-title {
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #8d8984;
+    font-weight: lighter;
+    font-size: 3.5em;
+    margin-bottom: 200px;
+
+}
+
+article.card {
+    display: inline-block;
+    color: #333132;
+    margin-left: 200px;
+    margin-top: -75px;
+    text-align: center;
+    width: 28%;
+    height: 360px;
+    vertical-align: text-bottom;
+    margin-bottom: 6em;
+}
+
+article.card h1, article.card h2 {
+    margin-bottom: 0em;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #8d8984;
+    line-height: 1.5em;
+    font-size: 2em;
+} 
+
+article.card img {
+    width: 150px;
+}
+
+article.card p.price {
+        font-family: "Source Sans Pro", sans-serif;
+        color: #8d8984;
+        font-size: 1.5em;
+        margin-bottom: 1em;
+        margin-top: 0em;
+}
+
+p.appDesc {
+    margin-bottom: 1em;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #8d8984;
+    font-weight: lighter;
+    line-height: 1.5em;
+    font-size: 1em;
+    margin-bottom: 10em;
+}
+
+/* About */
+
+#meet {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #10B9D2;
+    line-height: 1.5em;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 3em;
+    margin: 1.5em 0 0 0;
+
+}
+
+#mp {
+    width: 65%;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #8d8984;
+    font-weight: lighter;
+    line-height: 1.75em;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 3em auto;
+    margin-bottom: 6em;
+
+}
+
+.us {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #10B9D2;
+    font-weight: lighter;
+    text-align: center; 
+    font-size: 50px;
+}
+
+section.team {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #8d8984;
+    width: 60%;
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 14em;
+}
+ 
+section.team h2, 
+section.team h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #8d8984;
+    display: flex;
+    align-items: center;
+}
+
+section.team h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    margin-top: 3.5em;
+    color: #bbc946;
+    display: flex;
+    align-items: center;
+}
+
+section.team p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: lighter;
+    color: #8d8984;
+    display: flex;
+    align-items: center;
+}
+
+section.team img {
+    max-height: 125px;
+    margin: 3em 2em 3em;
+    border-radius: 50%;
+    border: 1em solid rgba(16, 185, 210, .5);
+}
+
+section.team:last-child {
+    padding-bottom: 100px;
+}
