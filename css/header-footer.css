@@ -169,6 +169,10 @@ img.product-detail-phone {
     width: 60%;
     margin-left: 1.4em;
     margin-bottom: 3em;
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: lighter;
+
 }
 
 .topDownload {
@@ -198,4 +202,33 @@ img.product-detail-phone {
     position: absolute;
     left: 30em;
     padding-top: 2em;
+}
+
+#line2 {
+/* border: solid red 1px; */
+position: absolute;
+height: 10em;
+right: 20em;
+top: 12em;
+
+}
+
+#line3 {
+    /* border: solid red 1px; */
+    position: absolute;
+    height: 3em;
+    right: 14.4em;
+    top: 24em;
+    
+    }
+
+#reviews {
+    background-color: #7ECCC9;
+    display: block;
+    position: relative;
+    left: -1.7em;
+    width: 90%;
+    margin-top: 12em;
+    padding: 3em 7em 3em 3em;
+
 }
