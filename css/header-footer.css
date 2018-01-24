@@ -1,3 +1,8 @@
+/* Universal */
+body {
+    font-family: "Source Sans Pro", sans-serif;
+
+}
 /* Header */
 
 nav.thrubyNav #logo {
@@ -34,7 +39,7 @@ nav li a {
     background: linear-gradient(90deg,,);
     color: rgb(229,245,249);
     padding: 8px 17px;
-    border-radius: 8px;
+    border-radius: 17px;
     text-align: center;
     transition: all .5s ease-out;
 }
@@ -64,6 +69,7 @@ a:hover {
     color: #726f6c;
     text-align: center;
     padding: .5em 0;
+    /* position: */
 }
 
 
@@ -85,7 +91,6 @@ a:hover {
     margin-top: 325px;
     padding: 1em 3em;
     border-radius: 3em;
-
 }
 
 #introducing {
@@ -99,9 +104,6 @@ a:hover {
     float: left;
     position: absolute;
     left: 350px;
-
-
-
 }
 
 #two{
@@ -129,18 +131,31 @@ a:hover {
 
 /* Product Detail */
 .thruby-product-detail-header {
-    border: solid red 1px;
+    /* border: solid red 1px; */
     width: 90%;
     margin: 0 auto;
 }
 
-img.product-detail-hand {
-    border: solid red 1px;
-    margin-left: 64em;
+.thruby-product-detail-header h1 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: lighter;
+    font-size: 4em;
+    margin-bottom: .2em;
+}
+
+
+
+img.product-detail-phone {
+    /* border: solid red 1px; */
+    margin-left: 47em;
+    margin-bottom: 3em; 
+    height: 30em;
+    position: absolute;
+    top: 10em;
 }
 
 #features {
-    border: solid red 1px;
+    /* border: solid rgb(168, 104, 104) 1px; */
     width: 40%;
     position: absolute;
     top: 23em;
@@ -148,16 +163,120 @@ img.product-detail-hand {
 }
 
 #reviews {
-    border: solid red 1px;
+    /* border: solid red 1px; */
     width: 60%;
     margin-left: 1.4em;
     margin-bottom: 3em;
-    /* position: absolute;
-    top: 23em;
-    left: 1.4em; */
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: lighter;
 }
 
-.download {
-    background-color: #BAC947;
+.topDownload {
+    background-color: #bbc946;
     color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: lighter;
+    left: 350px;
+    padding: 1em 3em;
+    border-radius: 3em;
+}
+
+/* This is being used to push the footer down to the bottom of the page. Can't seem to get it to operate as a fixed, sticky footer */
+#invisible-div-product-detail {
+    margin-bottom: 24em;
+}
+
+#feature1 {
+    /* border: solid red 1px; */
+    width: 18em;
+    margin-left: 6em;
+    color: #8d8984;
+    font-weight: lighter;
+}
+
+#feature1 h2 {
+    font-weight: lighter;
+}
+
+#feature2 {
+    /* border: solid red 1px; */
+    width: 18em;
+    margin-left: 54em;
+    margin-top: -24em;
+    color: #8d8984;
+    font-weight: lighter;
+}
+
+#feature2 h2 {
+    font-weight: lighter;
+}
+
+#feature3 {
+    /* border: solid red 1px; */
+    width: 18em;
+    margin-left: 52em;
+    margin-top: 13em;
+    color: #8d8984;
+    font-weight: lighter;
+}
+
+#feature3 h2 {
+    font-weight: lighter;
+}
+
+#line1 {
+    width: 20%;
+    position: absolute;
+    left: 30em;
+    padding-top: 2em;
+}
+
+#line2 {
+/* border: solid red 1px; */
+position: absolute;
+height: 10em;
+right: 20em;
+top: 12em;
+}
+
+#line3 {
+    /* border: solid red 1px; */
+    position: absolute;
+    height: 3em;
+    right: 14.4em;
+    top: 24em;
+}
+
+#reviews {
+    background-color: #7ECCC9;
+    /* display: block; */
+    position: relative;
+    left: -1.7em;
+    width: 90%;
+    margin-top: 12em;
+    padding: 3em 7em 3em 3em;
+}
+
+#reviews h2 {
+    font-size: 3em;
+    font-weight: 100;
+    text-align: center;
+    margin-top: -.3em;
+}
+
+
+.thruby-reviews-1 h3, .thruby-reviews-2 h3, .thruby-reviews-3 h3 {
+font-weight: 100;
+} 
+
+.download {
+    background-color: #bbc946;
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: lighter;
+    left: 350px;
+    padding: 1em 3em;
+    border-radius: 3em;
+    margin-left: 34.3em;
 }
