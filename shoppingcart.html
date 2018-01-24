@@ -8,7 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Asar|Sansita" rel="styles.css">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="/css/styles-home.css" />
-    <script src="products.js"></script>
+    <script src="js/products.js"></script>
+
+     <script src="http://code.jquery.com/jquery-1.9.0rc1.js"></script> <!-- jquery -->
+
 </head>
     <body class="landing">
         <header class="homeHeader">
@@ -20,6 +23,7 @@
                     <li><a href="../products.html">Products</a></li>
                     <li><a href="../about.html">About</a></li>
                     <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../shoppingcart.html">Shopping Cart</a></li>
                 </ul>
             </nav>
         </header> 
@@ -30,7 +34,7 @@
             
             
     <fieldset class="info">
-        <h1>Billing and Sipping Information</h1>
+        <h1>Billing and Shipping Information</h1>
             <label>First name:<input class="input-adjust" type="text" id="firstname1"></label>
             <label>Last name:<input class="input-adjust" type="text" id="lastname1"></label>
             <label>Address:<input class="input-adjust" type="text" id="address1"></label>
@@ -40,19 +44,108 @@
         
         <input class="input-adjust" type="submit" value="Submit"></form>
    
-   
+   <div>
+       <ul>
+           <li><a class="add-to-cart" href="#" data-name="thRuby" data-price="4.00">thRuby $4.00</a></li>
+           <li><a class="add-to-cart" href="#" data-name="KeepUp" data-price="0.99">KeepUp $0.99</a></li>
+           <li><a class="add-to-cart" href="#" data-name="Carriage" data-price="0.99">Carriage $0.99</a></li>
+           <li><a class="add-to-cart" href="#" data-name="Lyingth" data-price="9.99">Lyingth $9.99</a></li>
+           <li><a class="add-to-cart" href="#" data-name="AllGownedUp" data-price="0.99">All Gowned Up $0.99</a></li>
+           <li><a class="add-to-cart" href="#" data-name="CandyCottageCookbook" data-price="6.00">Candy Cottage Cookbook $6.00</a></li>
+           <li><a class="add-to-cart" href="#" data-name="StronkFitness" data-price="0.99">Stronk Fitness $0.99</a></li>
+       </ul>
+       <button id="clear-cart">Clear Cart</button>
+   </div>
+
+    <div>
+      <h2>Your Cart</h2>
+        <ul id="show-cart">
+
+       </ul>
+
+    </div>
+
+
+
    
    <script>
+    
+    $(".add-to-cart").click(function(event){
+        event.preventDefault();
+        var name = $(this).attr("data-name");
+        var price = Number($(this).attr("data-price"));
+    
+        addItemToCart(name, price, 1);
+        displayCart();
+    });
+
+      function displayCart() {
+          var cartArray = listCart();
+          var output = "";
+          for (var i in cartArray) {
+              output += "<li>"+cartArray[i].name+" "+cartArray[i].count+"</li>"
+          }
+          $("#show-cart").html(output);
+      }
+    
+    
+    
+    
+    //    ********************************************************** //
+    // Shopping Cart Functions
       var cart = [] ;
-      var Item = function(name, price, discrp) {
+      var Item = function(name, price, count) {
           this.name = name
           this.price = price
-          this.discrp = discrip
+          this.count = count
       }; 
  
-    
+    function addItemToCart(name, price, count) {
+          for (var i in cart) {
+              if (cart[i].name === name) {
+                  cart[i].count += count;
+                  return;
+              }
+          }
+        var item = new Item(name, price, count);
+        cart.push(item);
+    }
+
+   console.log(cart);
+
+    function removeItemFromCart(name) {// removes one single item
+         for (var i in cart) {
+             if (cart[i].name == name) {
+                 cart[i].count --;
+                 break;
+             }
+         }
+    }
+
+
+    function listCart() {      // array of Items
+        var cartCopy = [];
+        for (var i in cart) {
+            var item = cart[i];
+            var itemCopy = {};
+            for (var p in item) {
+                itemCopy[p] = item[p];
+            }
+            cartCopy.push(itemCopy);
+        }
+           return cartCopy
+    }
+
+    var array = listCart();
+    array[0].name = "name";
+    console.log(array)
+
+    // removeItemFromCartAll(name) // removes all of single item by name
+    // clearCart()
+    // countCart() -> return total count
+    // totalCart() -> return total cost
+    // listCart() -> array of Item
+    // saveCart()
+    // loadCart()
     
     </script>
-
-    </body>
-</html>
